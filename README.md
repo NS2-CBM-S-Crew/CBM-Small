@@ -1,5 +1,7 @@
-# BDT Community Balance Mod
-A Natural Selection 2 balance and feature mod developed and maintained by the BDT.
+# Community Balance Mod-Small
+A Natural Selection 2 balance and feature mod developed and maintained by the Community developers.
+Designed for smaller teams for example 6vs6 in competetive plays.
+This mod is based on the BDT Community Balance Mod: https://github.com/ns2-bdt/CommunityBalanceMod
 
 ## Building
 To build the mod run the create_build.sh script in the project root.
