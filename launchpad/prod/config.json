@@ -1,13 +1,12 @@
 {
-    "publish_id": "2934445221",
-    "name": "BDT Community Balance Mod",
+    "name": "Community Balance Mod-Small",
     "description": [
-        "[h1]BDT Community Balance Mod revision [revision][/h1]",
+        "[h1]Community Balance Mod-Small revision [revision][/h1]",
         "",
-        "BDT Balance mod.",
+        "Balance mod.",
         "",
-        "View the most recent changelog [url=https://ns2-bdt.github.io/CommunityBalanceMod/changelog]here[/url]",
+        "View the most recent changelog [url=https://raw.githubusercontent.com/NS2-CBM-S-Crew/CBM-Small/refs/heads/main/docs/changelog.md]here[/url]",
         "",
-        "View the source: [url=https://github.com/ns2-bdt/CommunityBalanceMod]here[/url]"
+        "View the source: [url=https://github.com/NS2-CBM-S-Crew/CBM-Small]here[/url]"
     ]
 }
