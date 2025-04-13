@@ -1,0 +1,3 @@
+
+--Onos
+kBoneShieldHitpoints = 500

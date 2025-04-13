@@ -1,0 +1,2 @@
+-- Lerk
+kLerkHealth = 170

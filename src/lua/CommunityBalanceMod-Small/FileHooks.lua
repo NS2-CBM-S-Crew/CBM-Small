@@ -16,4 +16,6 @@ Script.Load("lua/CommunityBalanceMod/FileHooks.lua")
 
 -- Load the extra settings for small mod
 ModLoader.SetupFileHook("lua/Balance.lua", "lua/CommunityBalanceMod-Small/Balance.lua", "post")
+ModLoader.SetupFileHook("lua/Balance.lua", "lua/CommunityBalanceMod-Small/BalanceHealth.lua", "post")
+ModLoader.SetupFileHook("lua/Balance.lua", "lua/CommunityBalanceMod-Small/BalanceMisc.lua", "post")
 ModLoader.SetupFileHook("lua/Globals.lua", "lua/CommunityBalanceMod-Small/Globals.lua", "post")
