@@ -21,3 +21,6 @@ kGorgeEggBiomass = kTechId.BioMassOne
 kLerkEggBiomass = kTechId.BioMassSix
 kFadeEggBiomass = kTechId.BioMassNine
 kOnosEggBiomass = kTechId.BioMassTen
+
+-- ARC
+kMaxARCs = 4
