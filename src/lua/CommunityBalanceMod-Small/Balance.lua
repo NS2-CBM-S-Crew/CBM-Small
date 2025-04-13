@@ -1,0 +1,2 @@
+-- FortressPvE
+kFortressUpgradeCost = 999
