@@ -1574,18 +1574,17 @@ function PlayerUI_GetPlayerRegenerationHealth()
 end
 
 function PlayerUI_WithinCragRange()
-
     local player = Client.GetLocalPlayer()
     if player then
-        for _, crag in ipairs(GetEntitiesForTeamWithinRange("Crag", player:GetTeamNumber(), player:GetOrigin(), Crag.kHealRadius)) do
-            if crag:GetCanHeal() then
+        local ents = GetEntitiesForTeam("Crag", player:GetTeamNumber())
+        for _, crag in ipairs(ents) do
+            if player:GetOrigin():GetDistance(crag:GetOrigin()) <= crag:GetHealRadius() and crag:GetCanHeal() then
                 return true
             end
         end
     end
 
     return false
-
 end
 
 function PlayerUI_InGasGrenadeCloud()
