@@ -26,3 +26,4 @@ ModLoader.SetupFileHook("lua/Locale.lua", "lua/CommunityBalanceMod-Small/Locale.
 ModLoader.SetupFileHook("lua/MAC.lua", "lua/CommunityBalanceMod-Small/MAC.lua", "post")
 ModLoader.SetupFileHook("lua/Exo.lua", "lua/CommunityBalanceMod-Small/Exo.lua", "post")
 ModLoader.SetupFileHook("lua/Cyst.lua", "lua/CommunityBalanceMod-Small/Cyst.lua", "post")
+ModLoader.SetupFileHook("lua/Alien_Server.lua", "lua/CommunityBalanceMod-Small/Alien_Server.lua", "post")
