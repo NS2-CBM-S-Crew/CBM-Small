@@ -1,3 +1,12 @@
+-- Generic
+
+
+--- Aliens
+
+--Alien structures
+kCystBuildTime = 6
+kCystDetectRange = 10
+
 -- FortressPvE
 kFortressUpgradeCost = 999
 
@@ -21,6 +30,15 @@ kGorgeEggBiomass = kTechId.BioMassOne
 kLerkEggBiomass = kTechId.BioMassSix
 kFadeEggBiomass = kTechId.BioMassNine
 kOnosEggBiomass = kTechId.BioMassTen
+
+--- Marines
+
+--Marine structures
+kSentryCost = 6
+kSentryBatteryCost = 12
+
+-- MAC
+kMACCost = 4
 
 -- ARC
 kMaxARCs = 4
