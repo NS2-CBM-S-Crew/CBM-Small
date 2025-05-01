@@ -44,3 +44,8 @@ kMACCost = 4
 
 -- ARC
 kMaxARCs = 4
+
+--EXO
+kBaseExoArmor = 150
+kMinigunArmor = 50
+kPlasmaLauncherArmor = 25
