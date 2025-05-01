@@ -11,8 +11,7 @@ end
 Print("Loading CBS as base mod...")
 Script.Load("lua/CommunityBalanceMod/FileHooks.lua")
 
--- Clear the CBS global variable
--- g_communityBalanceModConfig = nil
+Print("Loading " .. modName .. ", version"..modVersion)
 
 -- Load the extra settings for small mod
 ModLoader.SetupFileHook("lua/Balance.lua", "lua/CommunityBalanceMod-Small/Balance.lua", "post")
@@ -28,3 +27,6 @@ ModLoader.SetupFileHook("lua/Exo.lua", "lua/CommunityBalanceMod-Small/Exo.lua", 
 ModLoader.SetupFileHook("lua/Cyst.lua", "lua/CommunityBalanceMod-Small/Cyst.lua", "post")
 ModLoader.SetupFileHook("lua/Alien_Server.lua", "lua/CommunityBalanceMod-Small/Alien_Server.lua", "post")
 ModLoader.SetupFileHook("lua/Alien_Client.lua", "lua/CommunityBalanceMod-Small/Alien_Client.lua", "post")
+
+
+ModLoader.SetupFileHook("lua/CommunityBalanceMod/GUIBetaBalanceChangelogData.lua", "lua/CommunityBalanceMod-Small/GUIBetaBalanceChangelogData.lua", "replace")
