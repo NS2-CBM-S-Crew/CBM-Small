@@ -9,13 +9,24 @@ end
 
 -- This is a small version of the Community Balance Mod, which is a mod that aims to balance the game by adjusting various parameters and settings.
 Print("Loading CBS as base mod...")
-Script.load("lua/CommunityBalanceMod/FileHooks.lua")
+Script.Load("lua/CommunityBalanceMod/FileHooks.lua")
 
---Clear the CBS global variable
-g_communityBalanceModConfig = nil
+Print("Loading " .. modName .. ", version"..modVersion)
 
 -- Load the extra settings for small mod
-ModLoader.SetupFileHook("lua/Balance.lua", "lua/CommunityBalanceMod/Balance.lua", "post")
-ModLoader.SetupFileHook("lua/Globals.lua", "lua/CommunityBalanceMod/Globals.lua", "post")
---ModLoader.SetupFileHook("lua/Globals.lua", "lua/CommunityBalanceMod/Globals.lua", "replace")
+ModLoader.SetupFileHook("lua/Balance.lua", "lua/CommunityBalanceMod-Small/Balance.lua", "post")
+ModLoader.SetupFileHook("lua/BalanceHealth.lua", "lua/CommunityBalanceMod-Small/BalanceHealth.lua", "post")
+ModLoader.SetupFileHook("lua/BalanceMisc.lua", "lua/CommunityBalanceMod-Small/BalanceMisc.lua", "post")
+ModLoader.SetupFileHook("lua/Globals.lua", "lua/CommunityBalanceMod-Small/Globals.lua", "post")
 
+ModLoader.SetupFileHook("lua/AlienTeam.lua", "lua/CommunityBalanceMod-Small/AlienTeam.lua", "post")
+ModLoader.SetupFileHook("lua/Locale.lua", "lua/CommunityBalanceMod-Small/Locale.lua", "post")
+
+ModLoader.SetupFileHook("lua/MAC.lua", "lua/CommunityBalanceMod-Small/MAC.lua", "post")
+ModLoader.SetupFileHook("lua/Exo.lua", "lua/CommunityBalanceMod-Small/Exo.lua", "post")
+ModLoader.SetupFileHook("lua/Cyst.lua", "lua/CommunityBalanceMod-Small/Cyst.lua", "post")
+ModLoader.SetupFileHook("lua/Alien_Server.lua", "lua/CommunityBalanceMod-Small/Alien_Server.lua", "post")
+ModLoader.SetupFileHook("lua/Alien_Client.lua", "lua/CommunityBalanceMod-Small/Alien_Client.lua", "post")
+
+
+ModLoader.SetupFileHook("lua/CommunityBalanceMod/GUIBetaBalanceChangelogData.lua", "lua/CommunityBalanceMod-Small/GUIBetaBalanceChangelogData.lua", "replace")
