@@ -128,6 +128,14 @@ AddMixinNetworkVars(OrdersMixin, networkVars)
 AddMixinNetworkVars(IdleMixin, networkVars)
 AddMixinNetworkVars(ConsumeMixin, networkVars)
 
+Crag.kHealPercentageLookup = {
+    ["Skulk"] = 10 / kSkulkHealth,
+    ["Gorge"] = 15 / kGorgeHealth,
+    ["Lerk"] = 16 / kLerkHealth,
+    ["Fade"] = 25 / kFadeHealth,
+    ["Onos"] = 55 / kOnosHealth,
+}
+
 function Crag:OnCreate()
 
     ScriptActor.OnCreate(self)
@@ -322,12 +330,12 @@ local kTechIdToLifeformHeal =
 }
 
 function Crag:TryHeal(target)
-
-    local unclampedHeal = target:GetMaxHealth() * Crag.kHealPercentage
-    local heal = Clamp(unclampedHeal, Crag.kMinHeal, Crag.kMaxHeal)
-    
-    if target.GetTechId then
-        heal = kTechIdToLifeformHeal[target:GetTechId()] or heal
+    local lookup = Crag.kHealPercentageLookup[target:GetClassName()]
+    local heal
+    if lookup then
+        heal = target:GetMaxHealth() * lookup
+    else
+        heal = Clamp(target:GetMaxHealth() * Crag.kHealPercentage, Crag.kMinHeal, Crag.kMaxHeal)
     end
 
     --[[if self.healWaveActive then
