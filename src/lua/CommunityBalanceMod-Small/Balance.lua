@@ -16,8 +16,6 @@ kFortressUpgradeCost = 999
 kLeapEnergyCost = 55
 
 --Lerk
-kSpikeSpread = Math.Radians(3.8)
-kSpikeDamage = 6
 kUmbraResearchTime = 105
 
 --Drifter
